@@ -23,7 +23,9 @@ input_values.extend( [0]*3 )
 # tutorial you will nee to add a line to enable VCD dumping.
 # ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 model = RegIncr()
+
 model.vcd_file = "regincr-sim.vcd"
+
 model.elaborate()
 
 sim = SimulationTool(model)
